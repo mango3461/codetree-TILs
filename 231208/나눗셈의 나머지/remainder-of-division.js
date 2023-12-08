@@ -4,7 +4,7 @@ let a=input[0]
 let b=input[1]
 let arr=Array(b).fill(0)
 let sum=0;
-for(let i=1;i<=5;i++){
+while(true){
     if(a<=1)break;
     arr[a%b]++
     a = parseInt(a/b)
