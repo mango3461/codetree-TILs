@@ -8,5 +8,5 @@ for(let i=0;i<6;i++){
         idx=i;
     }
 }
-if(idx=-1)console.log('None')
+if(idx===-1)console.log('None')
 else console.log(idx)
