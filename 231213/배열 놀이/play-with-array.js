@@ -9,7 +9,7 @@ for(let i=2; i<q+2;i++){
     let arr=input[i].split(' ').map(Number)
     if(arr[0] === 1){
         let a=arr[1]
-        console.log(input[a-1])
+        console.log(input1[a-1])
     } else if(arr[0]===2){
         let a=0;
         for(let i=0;i<n;i++){
