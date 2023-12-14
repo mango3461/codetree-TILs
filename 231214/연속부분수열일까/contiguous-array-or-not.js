@@ -8,9 +8,17 @@ let b=input[2].split(' ').map(Number)
 
 for(let i=0;i<n1;i++){
     let a1 =a.slice(i,i+n2)
-    if(a1===b){
+    if(arraysEqual(a1, b)){
         console.log('Yes')
         break;
     }
     if(i===(n1-1)) console.log('No')
+}
+
+function arraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) return false;
+    }
+    return true;
 }
